@@ -19,7 +19,7 @@ $(document).ready(function () {
   }
   setInterval(blink_text, 1000);
 
-  $(document).on("keypress touchstart",function () {
+  $(document).on("keypress touchstart", function () {
     if (!gameStarted) {
       $("#level-title").text("Simon Say");
       $(".lvl").text(level);

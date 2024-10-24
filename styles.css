@@ -61,6 +61,7 @@ body {
   font-family: "Press Start 2P", cursive;
   font-size: 2rem;
   color: #fef2bf;
+  margin-top: 2rem;
 }
 
 .lvl {
@@ -91,15 +92,15 @@ body {
   border: 5px outset whitesmoke;
   border-radius: 10%;
   cursor: pointer;
-  -webkit-transition: border 500ms ease-out;
+  /* -webkit-transition: border 500ms ease-out;
   -moz-transition: border 500ms ease-out;
   -o-transition: border 500ms ease-out;
-  transition: border 500ms ease-out;
+  transition: border 500ms ease-out; */
 }
 
-.btn:hover {
+/* .btn:hover {
   border: 10px inset whitesmoke;
-}
+} */
 
 .game-over {
   background-color: red;
