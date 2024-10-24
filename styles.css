@@ -52,7 +52,7 @@ body {
   font-family: "Press Start 2P", cursive;
   font-size: 2rem;
   color: #fef2bf;
-  
+
 }
 
 .lvl {
@@ -135,11 +135,11 @@ p.side{
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, cursive;
   text-align: center;
   color: gainsboro;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 700;
   writing-mode: vertical-lr;
   text-orientation: upright;
-  margin: 0;
+  margin-right: 50px;
 }
 
 
@@ -154,6 +154,7 @@ footer{
   font-family: "Press Start 2P", cursive;
   font-size: 0.9rem;
   color: #fef2bf;
+  grid-column: 3 / 2;
 }
 
 a{
