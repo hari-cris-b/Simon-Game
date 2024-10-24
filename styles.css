@@ -21,9 +21,11 @@
 }
 
 html,
-body,h1 {
-   margin: 0;
-   padding: 0;
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
 body {
@@ -35,15 +37,22 @@ body {
     rgba(252, 70, 107, 1) 100%
   );
   caret-color: transparent;
-  display: grid;              /*make responsive*/
+  display: grid; /*make responsive*/
   grid-template-columns: min-content auto;
-  /* min-width: 100%; */ 
+  /* min-width: 100%; */
 }
 
-.main{
-  display: flex;              /*make responsive*/
+.main {
+  display: flex; /*make responsive*/
   flex-direction: column;
-  min-height: 100vh;
+  /* height: 100vh;
+  width: 100%; */
+  /* width: 100vw; */
+  height: 100%;
+  min-height: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: hidden;
   justify-content: center;
   align-items: center;
 }
@@ -52,7 +61,6 @@ body {
   font-family: "Press Start 2P", cursive;
   font-size: 2rem;
   color: #fef2bf;
-
 }
 
 .lvl {
@@ -80,9 +88,17 @@ body {
   display: inline-block;
   height: 200px;
   width: 200px;
-  border: 10px solid black;
+  border: 5px outset whitesmoke;
   border-radius: 10%;
   cursor: pointer;
+  -webkit-transition: border 500ms ease-out;
+  -moz-transition: border 500ms ease-out;
+  -o-transition: border 500ms ease-out;
+  transition: border 500ms ease-out;
+}
+
+.btn:hover {
+  border: 10px inset whitesmoke;
 }
 
 .game-over {
@@ -112,7 +128,6 @@ body {
   /* box-shadow: inset -12px 50px 0 20px ; */
 }
 
-
 .yellow {
   background-color: yellow;
   border-bottom-left-radius: 100%;
@@ -130,26 +145,24 @@ body {
   
 } */
 
-
-p.side{
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, cursive;
+p.side {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, cursive;
   text-align: center;
   color: gainsboro;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 700;
   writing-mode: vertical-lr;
   text-orientation: upright;
-  margin-right: 50px;
+  margin: 0;
+  margin-left: 20px;
 }
-
-
 
 .row {
   display: flex;
   justify-content: center;
 }
 
-footer{
+footer {
   margin-top: auto;
   font-family: "Press Start 2P", cursive;
   font-size: 0.9rem;
@@ -157,7 +170,7 @@ footer{
   grid-column: 3 / 2;
 }
 
-a{
+a {
   text-decoration: none;
   color: #fef2bf;
 }
